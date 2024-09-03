@@ -64,7 +64,13 @@ print(my_list)
 #     return in * out
 # print(fun(3))
 
-tup = (1,) + (1,)
-tup = tup + tup
-print(len(tup))
+print()
+
+def f(x):
+    if x == 0:
+        return 0
+    print(x)
+    return x + f(x - 1)
+    
+print(f(3))
 

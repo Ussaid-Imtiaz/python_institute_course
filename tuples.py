@@ -32,3 +32,19 @@ tup = tuple(my_list)
 print(tup)    # outputs: (2, 4, 6)
 print(type(tup))    # outputs: <class 'tuple'>
 
+
+tup = 1, 2, 3
+a, b, c = tup
+
+print(a * b * c)
+
+tup = (1, 2, 4, 8)
+tup = tup[1:-1]
+print(tup)
+tup = tup[0]
+print(tup)
+print(type(tup))
+
+tup = (1,) + (1,)
+tup = tup + tup
+print(len(tup))
